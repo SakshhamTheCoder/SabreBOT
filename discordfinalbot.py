@@ -120,7 +120,7 @@ async def invite(ctx):
     embed2 = discord.Embed(
         title = "Invite this Bot to your server",
         color = 0xfee42b,
-        description = '[Invite To Server](https://discord.com/api/oauth2/authorize?client_id=765628261413683261&permissions=8&scope=bot) 👈 Click to invite this bot to your server',
+        description = '[Invite To Server](inviteURL) 👈 Click to invite this bot to your server',
     )
     await ctx.send(embed=embed2)
 
@@ -734,4 +734,4 @@ async def get_bank_data(user):
 client.loop.create_task(ch_pr())
 
 
-client.run("NzY1NjI4MjYxNDEzNjgzMjYx.X4Xk4g.Z4ruikSjaD7t5H3KtJm2d9tuj5Q")
+client.run(TOKEN)
